@@ -23,7 +23,7 @@ def create_random_structure(generated_text):
 
 def generate_xml(prompt, model, tokenizer, device):
     input_ids = tokenizer.encode(prompt, return_tensors="pt").to(device)
-    output = model.generate(input_ids, max_length=200, do_sample=True)
+    output = model.generate(input_ids, max_length=50, do_sample=True)
     generated_text = tokenizer.decode(output[0], skip_special_tokens=True)
     return generated_text
 
