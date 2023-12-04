@@ -42,5 +42,5 @@ int main() {
 /*
 Run the following to compile and execute the parser program (main.c):
 gcc -o main main.c -lxml2
-./main generated_xmls/generated_file_1.xml generated_xmls/generated_file_2.xml generated_xmls/generated_file_3.xml generated_xmls/generated_file_4.xml generated_xmls/generated_file_5.xml 
+./main generated_xmls/generated_file_1.xml generated_xmls/generated_file_2.xml generated_xmls/generated_file_3.xml generated_xmls/generated_file_4.xml generated_xmls/generated_file_5.xml
 */
