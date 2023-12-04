@@ -15,11 +15,15 @@ def create_random_structure(generated_text):
     lines = split_text(generated_text, random.randint(2, 5))
     root = ET.Element(random.choice(element_names))
 
+    # To make formatting of XML files more neat with newlines
     for line in lines:
-        sub_element = ET.SubElement(root, random.choice(element_names))
-        sub_element.text = line.strip()
+        element_name = random.choice(element_names)
+        sub_element = ET.SubElement(root, element_name)
+        sub_element.text = "\n  " + line.strip() + "\n  "
+        sub_element.tail = "\n"
 
     return root
+
 
 def generate_xml(prompt, model, tokenizer, device):
     input_ids = tokenizer.encode(prompt, return_tensors="pt").to(device)
