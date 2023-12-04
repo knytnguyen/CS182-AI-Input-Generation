@@ -1,0 +1,3 @@
+<part><section>You may change the XML file contents in the following way.
+
+Note: If you need to override any of the XML tags, make sure you have the correct XAML version or XML spec.</section><item>&lt;/sitemap&gt; &lt;clean&gt; &lt;/clean&gt; &lt;mixed&gt; A B...</item></part>
